@@ -1,0 +1,135 @@
+.columnas{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+}
+
+
+.columnas-block{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: white;
+}
+
+.NoMetales{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(141,185,136) ;
+}
+.Alcalinos{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(191,161,199) ;
+}
+.Alcalinoterreos{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(215,161,195) ;
+}
+.Metales{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(232,187,84) ;
+}
+.Lantanidos{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(222,156,96) ;
+}
+.Actinidos{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(217,148,129) ;
+}
+.OtrosMetales{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(245,219,60) ;
+}
+.Metaloides{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(213,219,96) ;
+}
+.Halogenos{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(161,201,201) ;
+}
+.GasesNobles{
+    border-color: white;
+    border-style: solid;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    margin:-3px; 
+    text-align: center;
+    line-height: 45px;
+    background-color: rgb(167,201,234) ;
+}
+
