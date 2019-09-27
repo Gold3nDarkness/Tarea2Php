@@ -1,8 +1,8 @@
 
 .titulo{
     flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    justify-content: center;
+    text-align: center;
 }
 .columnas{
     border-color: white;
