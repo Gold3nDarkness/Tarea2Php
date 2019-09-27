@@ -158,7 +158,7 @@ $elemento=array(
 
 </head>
 <body>
-    
+    <?php echo "<h1 class=titulo>Tabla Periodica</h1>"?>
 <!-- Columnas -->
 <?php foreach($columnas as $columna): ?>
 
