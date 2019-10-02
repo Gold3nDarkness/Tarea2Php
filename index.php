@@ -92,7 +92,7 @@ $elemento=array(
         "Fm",
         "Md",
         "No",
-        "Lr"
+        "Lr",
     ),
     "Otros Metales"=> array(
         "Al",
@@ -181,264 +181,263 @@ $elemento=array(
      ?>
 
         <?php if($columna==1&&$fila==1):?>
-        <?php if(!empty($elemento["Otros no Metales"][0])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("H",$elemento["Otros no Metales"])==0){echo "<div class=NoMetales> <span> H </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         
         <?php elseif($columna==18&&$fila==1):?>
-        <?php if(!empty($elemento["Gases Nobles"][0])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("He",$elemento["Gases Nobles"])==0){echo "<div class=GasesNobles> <span> He </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         
         <?php elseif($columna==1&&$fila==2):?>
-        <?php if(!empty($elemento["Alcalinos"][0])){echo "<div class=Alcalinos> <span> {$elemento["Alcalinos"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Li",$elemento["Alcalinos"])==0){echo "<div class=Alcalinos> <span> Li </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==1&&$fila==3):?>
-        <?php if(!empty($elemento["Alcalinos"][1])){echo "<div class=Alcalinos> <span> {$elemento["Alcalinos"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Na",$elemento["Alcalinos"])!=null){echo "<div class=Alcalinos> <span> Na </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==1&&$fila==4):?>
-        <?php if(!empty($elemento["Alcalinos"][2])){echo "<div class=Alcalinos> <span> {$elemento["Alcalinos"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("K",$elemento["Alcalinos"])!=null){echo "<div class=Alcalinos> <span> K </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==1&&$fila==5):?>
-        <?php if(!empty($elemento["Alcalinos"][3])){echo "<div class=Alcalinos> <span> {$elemento["Alcalinos"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Rb",$elemento["Alcalinos"])!=null){echo "<div class=Alcalinos> <span> Rb </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==1&&$fila==6):?>
-        <?php if(!empty($elemento["Alcalinos"][4])){echo "<div class=Alcalinos> <span> {$elemento["Alcalinos"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cs",$elemento["Alcalinos"])!=null){echo "<div class=Alcalinos> <span> Cs </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==1&&$fila==7):?>
-        <?php if(!empty($elemento["Alcalinos"][5])){echo "<div class=Alcalinos> <span> {$elemento["Alcalinos"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Fr",$elemento["Alcalinos"])!=null){echo "<div class=Alcalinos> <span> Fr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
 
         
         <?php elseif($columna==2&&$fila==2):?>
-        <?php if(!empty($elemento["Alcalinoterreos"][0])){echo "<div class=Alcalinoterreos> <span> {$elemento["Alcalinoterreos"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Be",$elemento["Alcalinoterreos"])==0){echo "<div class=Alcalinoterreos> <span> Be </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==2&&$fila==3):?>
-        <?php if(!empty($elemento["Alcalinoterreos"][1])){echo "<div class=Alcalinoterreos> <span> {$elemento["Alcalinoterreos"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Mg",$elemento["Alcalinoterreos"])!=null){echo "<div class=Alcalinoterreos> <span> Mg </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==2&&$fila==4):?>
-        <?php if(!empty($elemento["Alcalinoterreos"][2])){echo "<div class=Alcalinoterreos> <span> {$elemento["Alcalinoterreos"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ca",$elemento["Alcalinoterreos"])!=null){echo "<div class=Alcalinoterreos> <span> Ca </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==2&&$fila==5):?>
-        <?php if(!empty($elemento["Alcalinoterreos"][3])){echo "<div class=Alcalinoterreos> <span> {$elemento["Alcalinoterreos"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Sr",$elemento["Alcalinoterreos"])!=null){echo "<div class=Alcalinoterreos> <span> Sr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==2&&$fila==6):?>
-        <?php if(!empty($elemento["Alcalinoterreos"][4])){echo "<div class=Alcalinoterreos> <span> {$elemento["Alcalinoterreos"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ba",$elemento["Alcalinoterreos"])!=null){echo "<div class=Alcalinoterreos> <span> Ba </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==2&&$fila==7):?>
-        <?php if(!empty($elemento["Alcalinoterreos"][5])){echo "<div class=Alcalinoterreos> <span> {$elemento["Alcalinoterreos"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ra",$elemento["Alcalinoterreos"])!=null){echo "<div class=Alcalinoterreos> <span> Ra </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
  
         
         <?php elseif($columna==3&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][0])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Sc",$elemento["Metales de Transicion"])==0){echo "<div class=Metales> <span> Sc </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==4&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][1])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ti",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ti </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==5&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][2])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("V",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> V </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==6&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][3])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cr",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Cr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==7&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][4])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Mn",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Mn </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==8&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][5])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Fe",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Fe </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==9&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][6])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Co",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Co </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==10&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][7])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][7]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ni",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ni </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==11&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][8])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][8]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cu",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Cu </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==12&&$fila==4):?>
-        <?php if(!empty($elemento["Metales de Transicion"][9])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][9]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Zn",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Zn </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==3&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][10])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][10]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Y",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Y </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==4&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][11])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][11]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Zr",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Zr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==5&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][12])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][12]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Nb",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Nb </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==6&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][13])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][13]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Mo",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Mo </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==7&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][14])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][14]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Tc",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Tc </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==8&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][15])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][15]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ru",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ru </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==9&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][16])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][16]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Rh",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Rh </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==10&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][17])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][17]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pd",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Pd </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==11&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][18])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][18]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ag",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ag </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==12&&$fila==5):?>
-        <?php if(!empty($elemento["Metales de Transicion"][19])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][19]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cd",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Cd </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==4&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][20])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][20]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Hf",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Hf </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==5&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][21])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][21]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ta",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ta </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==6&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][22])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][22]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("W",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> W </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==7&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][23])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][23]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Re",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Re </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==8&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][24])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][24]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Os",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Os </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==9&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][25])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][25]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ir",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ir </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==10&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][26])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][26]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pt",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Pt </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==11&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][27])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][27]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Au",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Au </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==12&&$fila==6):?>
-        <?php if(!empty($elemento["Metales de Transicion"][28])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][28]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Hg",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Hg </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==4&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][29])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][29]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Rf",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span>Rf </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==5&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][30])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][30]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Db",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Db </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==6&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][31])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][31]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Sg",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Sg </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==7&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][32])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][32]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Bh",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Bh </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==8&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][33])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][33]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Hs",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Hs </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==9&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][34])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][34]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Mt",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Mt </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==10&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][35])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][35]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ds",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Ds </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==11&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][36])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][36]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Rg",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Rg </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==12&&$fila==7):?>
-        <?php if(!empty($elemento["Metales de Transicion"][37])){echo "<div class=Metales> <span> {$elemento["Metales de Transicion"][37]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cn",$elemento["Metales de Transicion"])!=null){echo "<div class=Metales> <span> Cn </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
   
         
         <?php elseif($columna==13&&$fila==2):?>
-        <?php if(!empty($elemento["Metaloides"][0])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("B",$elemento["Metaloides"])==0){echo "<div class=Metaloides> <span> B </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==3):?>
-        <?php if(!empty($elemento["Metaloides"][1])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Si",$elemento["Metaloides"])!=null){echo "<div class=Metaloides> <span> Si </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==4):?>
-        <?php if(!empty($elemento["Metaloides"][2])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ge",$elemento["Metaloides"])!=null){echo "<div class=Metaloides> <span> Ge </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==4):?>
-        <?php if(!empty($elemento["Metaloides"][3])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("As",$elemento["Metaloides"])!=null){echo "<div class=Metaloides> <span> As </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==5):?>
-        <?php if(!empty($elemento["Metaloides"][4])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Sb",$elemento["Metaloides"])!=null){echo "<div class=Metaloides> <span> Sb </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==5):?>
-        <?php if(!empty($elemento["Metaloides"][5])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Te",$elemento["Metaloides"])!=null){echo "<div class=Metaloides> <span> Te </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==6):?>
-        <?php if(!empty($elemento["Metaloides"][6])){echo "<div class=Metaloides> <span> {$elemento["Metaloides"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Po",$elemento["Metaloides"])!=null){echo "<div class=Metaloides> <span> Po </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
    
        
         <?php elseif($columna==13&&$fila==3):?>
-        <?php if(!empty($elemento["Otros Metales"][0])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Al",$elemento["Otros Metales"])==0){echo "<div class=OtrosMetales> <span> Al </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==13&&$fila==4):?>
-        <?php if(!empty($elemento["Otros Metales"][1])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ga",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Ga </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==13&&$fila==5):?>
-        <?php if(!empty($elemento["Otros Metales"][2])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("In",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> In </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==5):?>
-        <?php if(!empty($elemento["Otros Metales"][3])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Sn",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Sn </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==13&&$fila==6):?>
-        <?php if(!empty($elemento["Otros Metales"][4])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Tl",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Tl </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==6):?>
-        <?php if(!empty($elemento["Otros Metales"][5])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pb",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Pb </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==6):?>
-        <?php if(!empty($elemento["Otros Metales"][6])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Bi",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Bi </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==13&&$fila==7):?>
-        <?php if(!empty($elemento["Otros Metales"][7])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][7]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Nh",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Nh </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==7):?>
-        <?php if(!empty($elemento["Otros Metales"][8])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][8]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Fl",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Fl </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==7):?>
-        <?php if(!empty($elemento["Otros Metales"][9])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][9]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Mc",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Mc </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==7):?>
-        <?php if(!empty($elemento["Otros Metales"][10])){echo "<div class=OtrosMetales> <span> {$elemento["Otros Metales"][10]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
-
+        <?php if(array_search("Lv",$elemento["Otros Metales"])!=null){echo "<div class=OtrosMetales> <span> Lv </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        
         
         <?php elseif($columna==14&&$fila==2):?>
-        <?php if(!empty($elemento["Otros no Metales"][1])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("C",$elemento["Otros no Metales"])!=null){echo "<div class=NoMetales> <span> C </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==2):?>
-        <?php if(!empty($elemento["Otros no Metales"][2])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("N",$elemento["Otros no Metales"])!=null){echo "<div class=NoMetales> <span> N </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==2):?>
-        <?php if(!empty($elemento["Otros no Metales"][3])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("O",$elemento["Otros no Metales"])!=null){echo "<div class=NoMetales> <span> O </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==3):?>
-        <?php if(!empty($elemento["Otros no Metales"][4])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("P",$elemento["Otros no Metales"])!=null){echo "<div class=NoMetales> <span> P </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==3):?>
-        <?php if(!empty($elemento["Otros no Metales"][5])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("S",$elemento["Otros no Metales"])!=null){echo "<div class=NoMetales> <span> S </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==4):?>
-        <?php if(!empty($elemento["Otros no Metales"][6])){echo "<div class=NoMetales> <span> {$elemento["Otros no Metales"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
-
+        <?php if(array_search("Se",$elemento["Otros no Metales"])!=null){echo "<div class=NoMetales> <span> Se </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         
         <?php elseif($columna==17&&$fila==2):?>
-        <?php if(!empty($elemento["Halogenos"][0])){echo "<div class=Halogenos> <span> {$elemento["Halogenos"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("F",$elemento["Halogenos"])==0){echo "<div class=Halogenos> <span> F </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==17&&$fila==3):?>
-        <?php if(!empty($elemento["Halogenos"][1])){echo "<div class=Halogenos> <span> {$elemento["Halogenos"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cl",$elemento["Halogenos"])!=null){echo "<div class=Halogenos> <span> Cl </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==17&&$fila==4):?>
-        <?php if(!empty($elemento["Halogenos"][2])){echo "<div class=Halogenos> <span> {$elemento["Halogenos"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Br",$elemento["Halogenos"])!=null){echo "<div class=Halogenos> <span> Br </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==17&&$fila==5):?>
-        <?php if(!empty($elemento["Halogenos"][3])){echo "<div class=Halogenos> <span> {$elemento["Halogenos"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("I",$elemento["Halogenos"])!=null){echo "<div class=Halogenos> <span> I </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==17&&$fila==6):?>
-        <?php if(!empty($elemento["Halogenos"][4])){echo "<div class=Halogenos> <span> {$elemento["Halogenos"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("At",$elemento["Halogenos"])!=null){echo "<div class=Halogenos> <span> At </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==17&&$fila==7):?>
-        <?php if(!empty($elemento["Halogenos"][5])){echo "<div class=Halogenos> <span> {$elemento["Halogenos"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
-
+        <?php if(array_search("Ts",$elemento["Halogenos"])!=null){echo "<div class=Halogenos> <span> Ts </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        
         
         <?php elseif($columna==18&&$fila==2):?>
-        <?php if(!empty($elemento["Gases Nobles"][1])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ne",$elemento["Gases Nobles"])!=null){echo "<div class=GasesNobles> <span> Ne </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==18&&$fila==3):?>
-        <?php if(!empty($elemento["Gases Nobles"][2])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ar",$elemento["Gases Nobles"])!=null){echo "<div class=GasesNobles> <span> Ar </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==18&&$fila==4):?>
-        <?php if(!empty($elemento["Gases Nobles"][3])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Kr",$elemento["Gases Nobles"])!=null){echo "<div class=GasesNobles> <span> Kr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==18&&$fila==5):?>
-        <?php if(!empty($elemento["Gases Nobles"][4])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Xe",$elemento["Gases Nobles"])!=null){echo "<div class=GasesNobles> <span> Xe </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==18&&$fila==6):?>
-        <?php if(!empty($elemento["Gases Nobles"][5])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Rn",$elemento["Gases Nobles"])!=null){echo "<div class=GasesNobles> <span> Rn </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==18&&$fila==7):?>
-        <?php if(!empty($elemento["Gases Nobles"][6])){echo "<div class=GasesNobles> <span> {$elemento["Gases Nobles"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
-
+        <?php if(array_search("Og",$elemento["Gases Nobles"])!=null){echo "<div class=GasesNobles> <span> Og </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        
 
         <?php elseif($columna==3&&$fila==6):?>
-        <?php if(!empty($elemento["Lantanidos"][0])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("La-Lu",$elemento["Lantanidos"])==0){echo "<div class=Lantanidos> <span> La-Lu </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==4&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][1])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("La",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> La </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==5&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][2])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ce",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Ce </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==6&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][3])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pr",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Pr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==7&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][4])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Nd",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Nd </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==8&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][5])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pm",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Pm </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==9&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][6])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Sm",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Sm </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==10&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][7])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][7]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Eu",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Eu </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==11&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][8])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][8]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Gd",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Gd </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==12&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][9])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][9]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Tb",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Tb </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==13&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][10])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][10]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Dy",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Dy </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][11])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][11]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ho",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Ho </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][12])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][12]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Er",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Er </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==16&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][13])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][13]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Tm",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Tm </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==17&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][14])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][14]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Yb",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Yb </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==18&&$fila==8):?>
-        <?php if(!empty($elemento["Lantanidos"][15])){echo "<div class=Lantanidos> <span> {$elemento["Lantanidos"][15]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Lu",$elemento["Lantanidos"])!=null){echo "<div class=Lantanidos> <span> Lu </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         
         <?php elseif($columna==3&&$fila==7):?>
-        <?php if(!empty($elemento["Actinidos"][0])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][0]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>  
+        <?php if(array_search("Ac-Lr",$elemento["Actinidos"])==0){echo "<div class=Actinidos> <span> Ac-Lr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>  
         <?php elseif($columna==4&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][1])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][1]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Ac",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Ac </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==5&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][2])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][2]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Th",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Th </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==6&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][3])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][3]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pa",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Pa </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==7&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][4])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][4]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("U",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> U </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==8&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][5])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][5]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Np",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Np </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==9&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][6])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][6]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Pu",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Pu </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==10&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][7])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][7]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Am",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Am </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==11&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][8])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][8]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cm",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Cm </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==12&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][9])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][9]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Bk",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Bk </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==13&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][10])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][10]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Cf",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Cf </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==14&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][11])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][11]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Es",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Es </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
         <?php elseif($columna==15&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][12])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][12]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?> 
+        <?php if(array_search("Fm",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Fm </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?> 
         <?php elseif($columna==16&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][13])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][13]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?> 
+        <?php if(array_search("Md",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Md </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?> 
         <?php elseif($columna==17&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][14])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][14]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?> 
+        <?php if(array_search("No",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> No </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?> 
         <?php elseif($columna==18&&$fila==9):?>
-        <?php if(!empty($elemento["Actinidos"][15])){echo "<div class=Actinidos> <span> {$elemento["Actinidos"][15]} </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
+        <?php if(array_search("Lr",$elemento["Actinidos"])!=null){echo "<div class=Actinidos> <span> Lr </span></div> "; } else{ echo "<div class=columnas-block> <span> &nbsp; </span></div>" ;} ?>
 
         <?php else:?>
         <div class="columnas-block"> <?php echo "<span> &nbsp; </span>" ?> </div>
